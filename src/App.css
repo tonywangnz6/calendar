@@ -98,6 +98,8 @@ main {
 }
 
 .col-start {
+  display: flex;
+  align-items: center;
   justify-content: flex-start;
   text-align: left;
 }
@@ -108,6 +110,8 @@ main {
 }
 
 .col-end {
+  display: flex;
+  align-items: center;
   justify-content: flex-end;
   text-align: right;
 }
@@ -180,7 +184,8 @@ main {
   padding: 5px;
   font-size: 82.5%;
   line-height: 1;
-  font-weight: normal;
+  font-weight: bold;
+  color: black;
 }
 
 .calendar .body .disabled {
@@ -202,27 +207,27 @@ main {
 
 .calendar .body .cell:hover .bg, .calendar .body .holiday {
   font-weight: bold;
-  background-color: #95ef95;
+  background-color: #ffc107;
 }
 
 .calendar .body .cell:hover .bg, .calendar .body .birthday {
   font-weight: bold;
-  background-color: #f1f101;
+  background-color: #673ab7;
 }
 
 .calendar .body .cell:hover .bg, .calendar .body .busy {
   font-weight: bold;
-  background-color: #cecece;
+  background-color: #676363;
 }
 
 .calendar .body .cell:hover .bg, .calendar .body .anniversary {
   font-weight: bold;
-  background-color: #ff5d5d;
+  background-color: #e91e1e;
 }
 
 .calendar .body .cell:hover .bg, .calendar .body .selected {
   font-weight: bold;
-  background-color: orange;
+  background-color: #d2d0ce;
 }
 
 .calendar .body .cell:hover .bg, .calendar .body .checked {
@@ -266,7 +271,8 @@ main {
   color: #2727af;
 }
 
-.weekend {
+
+.calendar .body .weekend .number {
   color: #1a8fff;
 }
 
@@ -297,28 +303,28 @@ main {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background-color: #95ef95;
+  background-color: #ffc107;
 }
 
 .category-birthday-color {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background-color: #f1f101;
+  background-color: #673ab7;
 }
 
 .category-busy-color {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background-color: #cecece;
+  background-color: #676363;
 }
 
 .category-anniversary-color {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background-color: #ff5d5d;
+  background-color: #e91e1e;
 }
 
 .overlay {
@@ -349,4 +355,8 @@ main {
 
 .calendar-info .btn:hover {
   cursor: pointer;
+}
+
+.year-content {
+  font-size: 46px;
 }

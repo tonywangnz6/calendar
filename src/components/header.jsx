@@ -11,7 +11,7 @@ export const Header = (props) => {
               </div>
           </div>
           <div className="col col-center">
-              <span>{dateFns.format(props.currentDate, dateFormat)}</span>
+              <span className='year-content'>{dateFns.format(props.currentDate, dateFormat)}</span>
           </div>
           <div className="col col-end" onClick={props.nextYear}>
               <div className="icon">chevron_right</div>
